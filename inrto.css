@@ -1,0 +1,241 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+
+    --Red: hsl(0, 100%, 74%); 
+    --Green: hsl(154, 59%, 51%);
+    --Blue: hsl(248, 32%, 49%);
+    --Dark-Blue: hsl(249, 10%, 26%); 
+    --Grayish-Blue: hsl(246, 25%, 77%);
+    --Font-size: 16px;
+
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url("intro-component-with-signup-form-master/images/bg-intro-desktop.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: var(--Red);
+    color: white;
+  }
+  
+  h1, h2, h3 {
+    font-weight: 700;
+  }
+  
+  p {
+    font-weight: 400; 
+  }
+  
+  button {
+    font-weight: 500; 
+  }
+  
+  strong {
+    font-weight: 600; 
+  }
+
+  main {
+    display: flex;
+    align-items: center;
+    padding: 12vh 2vw;
+    justify-content: space-evenly;
+}
+
+  .text {
+    width: 40vw;
+    margin-top: 25vh;
+}
+
+.fo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -30vh;
+  width: 75vh;
+  width: 30vw;
+  max-width: 30vw;}
+  
+  .top {
+    background-color: var(--Blue);
+    padding: 2vh 3vw;
+    text-align: center;
+    border-radius: 0.5vw;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    margin-top: -13vh;
+    width: 30vw;
+    max-width: 30vw;
+}
+
+form {
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  padding: 8vh 2vw;
+  border-radius: 1vw;
+  width: 30vw;
+  max-width: 30vw;
+  align-items: stretch;
+  position: absolute;
+}
+
+form p {
+  font-size: 10px;
+  padding-top: 3vh;
+  color: var(--Grayish-Blue);
+}
+
+form strong{
+  color:var(--Red);
+}
+
+.inpput {
+  margin: 0vh 12vw;
+}
+
+.lap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-bottom: 3vh;
+  padding-right: 2vw;
+}
+
+.inp {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 8vh;
+}
+
+input {
+  padding: 2vh 1vw;
+  border-radius: 6px;
+  border: 1px solid var(--Dark-Blue);
+  width: 26vw;
+  margin: 0vh -12vw;
+  position: absolute;
+}
+
+img.error {
+  margin: 0vh 11vw;
+}
+
+.warning p {
+  color: hwb(0 48% 0%);
+  margin: -7vh 2vw;
+  width: max-content;
+  transition: color 0.3s ease;
+}
+
+button {
+  background-color: var(--Green);
+  color: white;
+  padding: 1.5vh 0vw;
+  border-radius: 6px;
+  border: 2px solid var(--Green);
+  cursor: pointer;
+}
+
+button:active{
+  background-color: hsl(154deg 59% 51% / 81%);
+  border:2px solid;
+}
+
+
+.succeed {
+  display: none;
+  background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20231226/pngtree-textured-backdrop-sky-blue-paper-with-a-beautifully-crumpled-appearance-image_13876126.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.succeed h1{
+
+  padding-top: 40vh;
+}
+
+mark{
+  padding: 1vh 1vw;
+}
+
+.warning p, 
+img.error {
+  display: none; /* إخفاء رسائل التحذير وصور الخطأ افتراضيًا */
+  position: absolute;
+
+}
+
+@media screen and (max-width:768px) {
+
+  body{
+    background-image: url(intro-component-with-signup-form-master/images/bg-intro-mobile.png);
+    
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2vh 2vw;
+}
+
+.text {
+  width: 20rem;
+  margin-top: 0vh;
+  text-align: center;
+}
+
+.text p{
+  padding-top: 3vh;
+}
+
+.fo {
+  margin-top: 16vh;
+}
+
+.top {
+  width: 85vw;
+  max-width: 85vw;
+}
+
+
+form {
+  width: 85vw;
+  max-width: 85vw;
+  text-align: center;
+}
+
+input {
+  width: 75vw;
+  max-width: 75vw;
+  margin: 0vh -64vw;
+}
+
+img.error {
+  margin: 0vh 4vw;
+}
+
+.warning p {
+  margin: -7vh -13vw;
+}
+
+button {
+  margin-top: -2vh;
+}
+
+  
+}
+
+
+
+
